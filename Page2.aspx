@@ -73,67 +73,65 @@
 <div id="blockUnderNav container" >
     <div class="col-lg-8 col-lg-offset-2" style="background: url('http://localhost:52802/Content/CinBack.jpg') no-repeat">
         <br />
-        <div class="row">
-        <div class="container text-center">
-            <div class="col-lg-5">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"> Movies that will never come 1</h3>
-                    </div>
-                    <div class="panel-body">
-                        <div id="1stCarousel" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner" role="listbox">
-                                <div class="item active">
-                                    <img src="http://www.amccinemas.co.uk/UserFiles/Films/Images/112x167_185691.jpg?t=636275213570533730" alt="Chania"> Going in Style
-                                </div>
-
-                                <div class="item">
-                                    <img src="http://www.amccinemas.co.uk/UserFiles/Films/Images/112x167_149342.jpg?t=636275213570533730" alt="Boss Baby" /> Boss Baby
-                                </div>
-
+            <div class="row">
+                <div class="container text-center col-lg-11">
+                    <div class="col-lg-5">
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title"> Movies that will never come 1</h3>
                             </div>
-                            <a class="left carousel-control" href="#1stCarousel" role="button" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="false"></span>                            
-                            </a>
-                            <a class="right carousel-control" href="#1stCarousel" role="button" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            </a>
-                        </div>
+                            <div class="panel-body">
+                                <div id="1stCarousel" class="carousel slide" data-ride="carousel">
+                                    <div class="carousel-inner" role="listbox">
+                                        <div class="item active">
+                                            <img src="http://www.amccinemas.co.uk/UserFiles/Films/Images/112x167_185691.jpg?t=636275213570533730" alt="Chania"> Going in Style
+                                        </div>
+
+                                        <div class="item">
+                                            <img src="http://www.amccinemas.co.uk/UserFiles/Films/Images/112x167_149342.jpg?t=636275213570533730" alt="Boss Baby" /> Boss Baby
+                                        </div>
+
+                                    </div>
+                                    <a class="left carousel-control" href="#1stCarousel" role="button" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left" aria-hidden="false"></span>                            
+                                    </a>
+                                    <a class="right carousel-control" href="#1stCarousel" role="button" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                    </a>
+                               </div>
                         
-                    </div>
+                           </div>
+                      </div>
                 </div>
-            </div>
 
-            <div class="col-lg-5">
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title"> Movies that will never come 2</h3>
-                    </div>
-                    <div class="panel-body">
-                        <div id="2ndCarousel" class="carousel slide" data-ride="carousel">
-                            <div class="carousel-inner" role="listbox">
-                                <div class="item active">
-                                    <img src="http://www.amccinemas.co.uk/UserFiles/Films/Images/112x167_185691.jpg?t=636275213570533730" alt="Chania"> Going in Style
+                <div class="col-lg-5">
+                    <div class="panel panel-primary">
+                        <div class="panel-heading">
+                            <h3 class="panel-title"> Movies that will never come 2</h3>
+                        </div>
+                        <div class="panel-body">
+                            <div id="2ndCarousel" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner" role="listbox">
+                                    <div class="item active">
+                                        <img src="http://www.amccinemas.co.uk/UserFiles/Films/Images/112x167_185691.jpg?t=636275213570533730" alt="Chania"> Going in Style
+                                    </div>
+
+                                    <div class="item">
+                                        <img src="http://www.amccinemas.co.uk/UserFiles/Films/Images/112x167_149342.jpg?t=636275213570533730" alt="Boss Baby" /> Boss Baby
+                                    </div>
+
                                 </div>
-
-                                <div class="item">
-                                    <img src="http://www.amccinemas.co.uk/UserFiles/Films/Images/112x167_149342.jpg?t=636275213570533730" alt="Boss Baby" /> Boss Baby
-                                </div>
-
+                                <a class="left carousel-control" href="#2ndCarousel" role="button" data-slide="prev">
+                                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="false"></span>                            
+                                </a>
+                                <a class="right carousel-control" href="#2ndCarousel" role="button" data-slide="next">
+                                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                                </a>
                             </div>
-                            <a class="left carousel-control" href="#2ndCarousel" role="button" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="false"></span>                            
-                            </a>
-                            <a class="right carousel-control" href="#2ndCarousel" role="button" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                            </a>
                         </div>
-                        
                     </div>
-                </div>
-            </div>
-
-            <div style="float:right;width:100px" >
+               </div>
+            <div class="col-lg-1" style="float:right;width:100px" >
                 <a class="twitter-timeline" style="margin-top:5px" data-lang="en" data-width="220" data-height="360" data-theme="light" href="https://twitter.com/AnnaKendrick47"></a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
                   <div class="container">
