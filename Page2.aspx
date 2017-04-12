@@ -12,6 +12,11 @@
         function AlertedPop() {
             alert("This search bar has an error, please contact an administator (Tho). Good luck!");
         }
+
+        function bad_idea() {
+            var a = document.getElementById("goingonBox").value;
+            alert("Wow that is absolutely horrible, here's a better suggestion, why dont you try contacting Tho instead? He's pretty lonely. Psh what a bad idea \"" + a +"\"");
+        }
     </script>
 <style>
 
@@ -70,12 +75,13 @@
   </div>
 </nav>
 
-<div id="blockUnderNav container" >
-    <div class="col-lg-8 col-lg-offset-2" style="background: url('http://localhost:52802/Content/CinBack.jpg') no-repeat">
+<div id="blockUnderNav container-fluid" >
+    <div class="col-sm-6 col-lg-offset-3" style="background: url('http://localhost:52802/Content/CinBack.jpg') no-repeat">
         <br />
             <div class="row">
-                <div class="container text-center col-lg-11">
-                    <div class="col-lg-5">
+                <div class="container text-center col-sm-9">
+                    <div class="row">
+                    <div class="col-lg-6">
                         <div class="panel panel-primary">
                             <div class="panel-heading">
                                 <h3 class="panel-title"> Movies that will never come 1</h3>
@@ -83,7 +89,7 @@
                             <div class="panel-body">
                                 <div id="1stCarousel" class="carousel slide" data-ride="carousel">
                                     <div class="carousel-inner" role="listbox">
-                                        <div class="item active">
+                                        <div class="item active ">
                                             <img src="http://www.amccinemas.co.uk/UserFiles/Films/Images/112x167_185691.jpg?t=636275213570533730" alt="Chania"> Going in Style
                                         </div>
 
@@ -104,7 +110,7 @@
                       </div>
                 </div>
 
-                <div class="col-lg-5">
+                    <div class="col-xs-6">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
                             <h3 class="panel-title"> Movies that will never come 2</h3>
@@ -113,11 +119,11 @@
                             <div id="2ndCarousel" class="carousel slide" data-ride="carousel">
                                 <div class="carousel-inner" role="listbox">
                                     <div class="item active">
-                                        <img src="http://www.amccinemas.co.uk/UserFiles/Films/Images/112x167_185691.jpg?t=636275213570533730" alt="Chania"> Going in Style
+                                        <img src="http://www.amccinemas.co.uk/UserFiles/Films/Images/112x167_178339.jpg?t=636275855839119375" alt="Chania"> Going in Style
                                     </div>
 
                                     <div class="item">
-                                        <img src="http://www.amccinemas.co.uk/UserFiles/Films/Images/112x167_149342.jpg?t=636275213570533730" alt="Boss Baby" /> Boss Baby
+                                        <img src="http://www.amccinemas.co.uk/UserFiles/Films/Images/112x167_181845.jpg?t=636275855839431702" alt="Boss Baby" /> Boss Baby
                                     </div>
 
                                 </div>
@@ -131,18 +137,40 @@
                         </div>
                     </div>
                </div>
-            <div class="col-lg-1" style="float:right;width:100px" >
-                <a class="twitter-timeline" style="margin-top:5px" data-lang="en" data-width="220" data-height="360" data-theme="light" href="https://twitter.com/AnnaKendrick47"></a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
-            </div>
-                  <div class="container">
-            <div class="col-sm-5 flex-wrap" style="background-color:#f39c12;border-top-left-radius:5px;border-bottom-right-radius:5px">
+                                 
+                    <div class="col-sm-12">
+                        <ul class="nav nav-tabs">
+                          <li class="active"><a href="#home" data-toggle="tab" aria-expanded="true">Home</a></li>
+                          <li><a href="#goingon" data-toggle="tab" aria-expanded="true">What's going on?</a></li>
+                        </ul>
+                    <div id="tabContents" class="tab-content">
+                        <div class="tab-pane fade active in" id="home">
+                            <p> Here is some text to fill in some space. Did you know that it's relatively fun to dive into a volcano? Only if you long for death!</p>
+                        </div>
+                        <div class="tab-pane fade" id="goingon">
+                            <p>Nothing much, what's going on with you?</p>
+                            <form action="javascript:bad_idea();">
+                            <div class="form-group">
+                                <label class="control-label" for="inputDefault"></label>
+                                <div class="input-group">
+                                <input class="form-control" type="text" id="goingonBox" />
+                                <span class="input-group-btn"><button class="btn btn-default" type="submit">submit</button></span>
+                                </div>
+                            </div>
+                            </form>
+                       </div>
+                    </div>
+                      <!--     <div class="col-sm-5 flex-wrap" style="background-color:#f39c12;border-top-left-radius:5px;border-bottom-right-radius:5px">
 
                 Yes
-            </div>
+            </div> -->
       </div>
-        </div>
-
-        </div>
+                    </div>
+                </div>
+                 <div class="col-sm-3">
+                    <a class="twitter-timeline" style="margin-top:5px" data-lang="en" data-width="220" data-height="360" data-theme="light" href="https://twitter.com/AnnaKendrick47"></a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                </div>
+           </div>
 
     </div>
 </div>

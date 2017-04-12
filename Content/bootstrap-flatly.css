@@ -4333,22 +4333,27 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
     }
 
 .nav-tabs {
-    border-bottom: 1px solid #ecf0f1
+    border-bottom: 1px solid #b4bcc2;
+    
 }
 
     .nav-tabs > li {
         float: left;
-        margin-bottom: -1px
+        margin-bottom: -1px;
+        
     }
 
         .nav-tabs > li > a {
             margin-right: 2px;
             line-height: 1.42857143;
+            background-color: #ffffff;
             border: 1px solid transparent;
             border-radius: 4px 4px 0 0
+            
         }
 
             .nav-tabs > li > a:hover {
+                background-color: #ffffff !important;
                 border-color: #ecf0f1 #ecf0f1 #ecf0f1
             }
 
@@ -4484,9 +4489,9 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
         border-radius: 4px 4px 0 0
     }
 
-    .nav-tabs-justified > .active > a, .nav-tabs-justified > .active > a:hover, .nav-tabs-justified > .active > a:focus {
+   .nav-tabs-justified > .active > a, .nav-tabs-justified > .active > a:hover, .nav-tabs-justified > .active > a:focus {
         border-bottom-color: #ffffff
-    }
+    } 
 }
 
 .tab-content > .tab-pane {
@@ -4494,7 +4499,12 @@ textarea.input-group-sm > .form-control, textarea.input-group-sm > .input-group-
 }
 
 .tab-content > .active {
-    display: block
+    padding: 5px;
+    display: block;
+    background-color: #ffffff;
+    opacity: 0.95;
+    border: 1px solid;
+    border-color: #b4bcc2;
 }
 
 .nav-tabs .dropdown-menu {
