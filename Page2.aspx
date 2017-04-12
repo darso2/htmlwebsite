@@ -15,11 +15,14 @@
 
         function bad_idea() {
             var a = document.getElementById("goingonBox").value;
-            alert("Wow that is absolutely horrible, here's a better suggestion, why dont you try contacting Tho instead? He's pretty lonely. Psh what a bad idea \"" + a +"\"");
+            alert("Wow that is absolutely horrible, here's a better suggestion, why dont you try contacting Tho instead? He's pretty lonely. Pshhh, what a bad idea \"" + a + "\"");
+            a = "";
         }
     </script>
 <style>
-
+    .blockUnderNav {
+        margin-top: -21px;
+    }
 </style>
 </head>
 <body>
@@ -45,7 +48,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="Page2.aspx">Tho Cinemas</a>
+      <a class="navbar-brand" href="Page2.aspx" style="background:url(https://taustuff.files.wordpress.com/2014/11/tau.gif?w=300);background-size:60px;background-position:center;background-repeat: no-repeat;">Tho <br /> Cinemas </> </a>
     </div>
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -75,11 +78,11 @@
   </div>
 </nav>
 
-<div id="blockUnderNav container-fluid" >
+<div class="blockUnderNav container-fluid" >
     <div class="col-sm-6 col-lg-offset-3" style="background: url('http://localhost:52802/Content/CinBack.jpg') no-repeat">
         <br />
             <div class="row">
-                <div class="container text-center col-sm-9">
+                <div class="container text-center col-sm-8">
                     <div class="row">
                        <div class="col-lg-6">
                         <div class="panel panel-primary">
@@ -145,10 +148,10 @@
                         </ul>
                     <div id="tabContents" class="tab-content">
                         <div class="tab-pane fade active in" id="home">
-                            <p> Here is some text to fill in some space. Did you know that it's relatively fun to dive into a volcano? Only fun if you long for death!</p>
+                            <h6><p> Here is some text to fill in some space. Did you know that it's relatively fun to dive into a volcano? Only fun if you long for death!</p></h6>
                         </div>
                         <div class="tab-pane fade" id="goingon">
-                            <p>Nothing much, what's going on with you?</p>
+                            <h4><p>Nothing much, what's going on with you?</p></h4>
                             <form action="javascript:bad_idea();">
                             <div class="form-group">
                                 <label class="control-label" for="inputDefault"></label>
@@ -167,10 +170,38 @@
       </div>
                     </div>
                 </div>
-                 <div class="col-sm-3">
-                    <a class="twitter-timeline" style="margin-top:5px" data-lang="en" data-width="220" data-height="360" data-theme="light" href="https://twitter.com/AnnaKendrick47"></a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+                 <div class="col-sm-4">
+                    <a class="twitter-timeline" style="margin-top:5px" data-lang="en" data-width="220" data-height="400" data-theme="light" href="https://twitter.com/AnnaKendrick47"></a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                 </div>
            </div>
+        <br />
+            <div class="line-seperator"></div>
+        <br />
+        
+            <div class="container-fluid col-xs-12" style="border-top-left-radius:5px;border-top-right-radius:5px;background-color:aliceblue" id="blockUnderSeperator">
+                <div class="row">
+
+                    <div class="col-xs-4" id="firstblock" ><br />
+                        <img src="Content/unlimitedMovies.jpg" height="200" class="imgT" ><br />
+                        <h3 style="width:100%"> Tho's Unlimited Movie Card</h3>
+                        <div style="display:inline-block;word-wrap:break-word;width:100%">Double click here for highlighted text.</div>
+                        <div></div>
+                    </div>
+
+                    <div class="col-xs-4" id="secondblock"><br />
+                        <img src="http://i4.walesonline.co.uk/whats-on/whats-on-news/article9004096.ece/ALTERNATES/s1200/KRR_WOL_080415LunaCinema_01.jpg" width="275" height="200" class="imgT"><br />
+                        <h3 style="width:100%"> Tho's Unlimited Movie Card</h3>
+                         <div style="display:inline-block;word-wrap:break-word;width:100%">45612344124563245613124531234512456312456312456346146346</div>
+                    </div>
+
+                    <div class="col-xs-4" id="thirdsblock"><br />
+                        <img src="http://pops-advertising.co.uk/wp-content/themes/pops/images/random-businessman.png" width="220" height="200" class="imgT"/><br />
+                         Double click here for highlighted text.
+                    </div>
+
+                </div>
+            </div>
+        
 
     </div>
 </div>
