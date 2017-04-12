@@ -81,7 +81,7 @@
             <div class="row">
                 <div class="container text-center col-sm-9">
                     <div class="row">
-                    <div class="col-lg-6">
+                       <div class="col-lg-6">
                         <div class="panel panel-primary">
                             <div class="panel-heading">
                                 <h3 class="panel-title"> Movies that will never come 1</h3>
@@ -110,7 +110,7 @@
                       </div>
                 </div>
 
-                    <div class="col-xs-6">
+                       <div class="col-xs-6">
                     <div class="panel panel-primary">
                         <div class="panel-heading">
                             <h3 class="panel-title"> Movies that will never come 2</h3>
@@ -138,14 +138,14 @@
                     </div>
                </div>
                                  
-                    <div class="col-sm-12">
+                       <div class="col-sm-12">
                         <ul class="nav nav-tabs">
                           <li class="active"><a href="#home" data-toggle="tab" aria-expanded="true">Home</a></li>
                           <li><a href="#goingon" data-toggle="tab" aria-expanded="true">What's going on?</a></li>
                         </ul>
                     <div id="tabContents" class="tab-content">
                         <div class="tab-pane fade active in" id="home">
-                            <p> Here is some text to fill in some space. Did you know that it's relatively fun to dive into a volcano? Only if you long for death!</p>
+                            <p> Here is some text to fill in some space. Did you know that it's relatively fun to dive into a volcano? Only fun if you long for death!</p>
                         </div>
                         <div class="tab-pane fade" id="goingon">
                             <p>Nothing much, what's going on with you?</p>
