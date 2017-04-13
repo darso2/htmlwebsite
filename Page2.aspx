@@ -19,7 +19,6 @@
             a = "";
         }
     </script>
-     <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 <style>
     .blockUnderNav {
         margin-top: -21px;
@@ -27,19 +26,16 @@
 </style>
 </head>
 <body>
-    <div class="container-fluid" style="background-color:#354a5f;opacity:0.6">
-        <div class="row">
-           <div class="col-lg-2" style="background-color:#2c3e50;opacity:0.6">
-               &nbsp;
-           </div>
-           <div class="col-lg-8">
-                
-               &nbsp;</div>
-           <div class="col-lg-2" style="background-color:#2c3e50;opacity:0.6">
-                &nbsp;
-            </div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-6 gradl">         
+            &nbsp;
+        </div>
+        <div class="col-lg-6 gradr">
+            &nbsp;
         </div>
     </div>
+</div>
     <nav class="navbar navbar-default">
   <div class="container-fluid">
    <div class="col-lg-6 col-lg-offset-3">
@@ -55,7 +51,7 @@
 
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="#">Cinemas <span class="sr-only">(current)</span></a></li>
+        <li><a href="Cinemas.aspx">Cinemas <span class="sr-only">(current)</span></a></li>
         <li><a href="#">Movies</a></li>
         <li class="dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Movie Types <span class="caret"></span></a>
@@ -175,7 +171,7 @@
                     </div>
                 </div>
                  <div class="col-sm-4">
-                    <a class="twitter-timeline" style="margin-top:5px" data-lang="en" data-width="220" data-height="400" data-theme="light" href="https://twitter.com/AnnaKendrick47"></a>
+                    <a class="twitter-timeline" style="margin-top:5px" data-lang="en" data-width="220" data-height="400" data-theme="light" href="https://twitter.com/AnnaKendrick47"><script async='async' src="//platform.twitter.com/widgets.js"  charset="utf-8"></script></a>
                 </div>
            </div>
                <u> <h2 style="color:white"><i>Imaginary cinema deals</i></h2></u> 
@@ -190,7 +186,7 @@
                     </div>
 
                     <div class="col-xs-4" id="secondblock"><br />
-                        <img src="http://i4.walesonline.co.uk/whats-on/whats-on-news/article9004096.ece/ALTERNATES/s1200/KRR_WOL_080415LunaCinema_01.jpg" width="275" height="200" class="imgT"><br />
+                        <img src="http://i4.walesonline.co.uk/whats-on/whats-on-news/article9004096.ece/ALTERNATES/s1200/KRR_WOL_080415LunaCinema_01.jpg" width="250" height="200" class="imgT"><br />
                         <h3 style="width:100%"> Tho's Imaginary Cinema Locations</h3>
                          <div style="display:inline-block;word-wrap:break-word;width:100%">The picture is me spoiling Batman the movie </div>
                     </div>
