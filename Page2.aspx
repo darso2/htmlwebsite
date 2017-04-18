@@ -192,7 +192,7 @@
                     </div>
 
                     <div class="col-xs-4" id="thirdsblock"><br />
-                        <img src="https://wholefully.com/wp-content/uploads/2014/02/movie-theatre-popcorn-4-800x1200.jpg" width="250" height="200" class="imgT"/><br />
+                        <img src="https://wholefully.com/wp-content/uploads/2014/02/movie-theatre-popcorn-4-800x1200.jpg" width="225" height="200" class="imgT"/><br />
                         <h3 style="width:100%"> Tho's Popcorn Recipes</h3>
                        <div style="word-wrap:break-word">Not lyingg but here is a long string sdhjkfldjkfsdfsfhsdfjkjkfsdfsdfsdjkdfsdfkdffsdjfsdklfsdjklfsdjklfsdfkljsdlfkfjkslfjsfjsdlfjksjkflskjfsklfl </div> 
                     </div>
