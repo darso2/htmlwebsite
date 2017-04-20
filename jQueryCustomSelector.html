@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Creating a Custom Pseudo-Class Selector</title>
+    <style>
+        .hidden {
+            color:#fff;
+        }
+    </style>
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script>
+        //creating the selector, give it the expression 
+        $.extend($.expr[":"], {
+            //name of the pseudo-class selector, as well as the function to call
+            hiddenPanel: function (pnl) {
+                if (pnl === null) return false;
+                var $pnl = $(pnl);
+                return $pnl.css("display") == "none" ||
+                    $pnl.css("visibility") == "hidden" ||
+                    $pnl.hasClass("hidden");
+            }
+        })
+
+
+        $(function () {
+            $("#showPanelsButton").click(function () {
+                $("div:hiddenPanel")
+                    .removeClass("hidden")
+                    .css({ "display": "", "visibility": "" });
+            })
+        })
+
+        function updatePanels($context) {
+           $context.find("div.panel").each(function (i) {
+                $(this).html("Panel " + i);
+            })
+        }
+
+    </script>
+</head>
+<body>
+Creating a Custom jQuery Selector 
+    <br />
+    <br />
+    <button id="showPanelsButton">Show Hidden Panels</button>
+    <br />
+    <br />
+    <div class="panel hidden">
+        Panel 1
+    </div>
+    <div class="panel" style="visibility:hidden">
+        Panel 2 
+    </div>
+    <div class="panel" style="display:none;">
+        Panel 3
+    </div>
+    <div class="panel">
+        Panel 4
+    </div>
+</body>
+</html>

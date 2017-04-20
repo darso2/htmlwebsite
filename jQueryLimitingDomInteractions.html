@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Creating a Custom Pseudo-Class Selector</title>
+    <style>
+        .hidden {
+            color:#fff;
+        }
+    </style>
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script>
+        $(function () {
+            var $tbody = $("#customersTable tbody");
+            $("#loadCustomersButton").click(function () {
+                $tbody.html("");
+                var start = new Date();
+                var custs = getCustomers();
+                var html = ""; //used for third method or html = [];
+                for (var i = 0; i < custs.length; i++) {
+                    var cust = custs[i];
+    //orginal method
+    //                var tr = $("#customersTable tbody").append("<tr></tr>");
+    //                tr.append"<td>" + cust.id + "</td>");
+    //                tr.append("<td>" + cust.name + "</td>");
+    //                tr.append("<td>" + cust.address + "</td>");
+    //                tr.append("<td>" + cust.city + "</td>");
+                    //tr.append("<td>" + cust.state + "</td>");
+                   // tr.append("<td>" + cust.zip + "</td>");
+                    //tr.append("<td>" + cust.newCustomer + "</td>");
+    
+     //second method touching the dom once every time                 
+     //               var tr = $("#customersTable tbody").append("<tr>"
+     //                   + "<td>" + cust.id + "</td>"
+     //                   + "<td>" + cust.name + "</td>"
+     //                   + "<td>" + cust.address + "</td>"
+     //                   + "<td>" + cust.city + "</td>"
+     //                   + "<td>" + cust.state + "</td>"
+     //                   + "<td>" + cust.zip + "</td>"
+     //                   + "<td>" + cust.newCustomer + "</td></tr >");
+
+     //third method touching the dom only once with variable html, alternatively could make it into an array.
+                    html += "<tr>"   // or html.push =()
+                        + "<td>" + cust.id + "</td>"
+                        + "<td>" + cust.name + "</td>"
+                        + "<td>" + cust.address + "</td>"
+                        + "<td>" + cust.city + "</td>"
+                        + "<td>" + cust.state + "</td>"
+                        + "<td>" + cust.zip + "</td>"
+                        + "<td>" + cust.newCustomer + "</td></tr >";
+                }
+                $tbody.append(html); //used with the third method or $tbody.append(html.join("")) where join is the character that joins the entries togehter
+                var diff = new Date().getTime() - start.getTime();
+                $("#diff").html(diff);
+            })
+        });
+        function getCustomers() {
+            var custs = [];
+            for (var i = 0; i < 2500; i++) {
+                var cust = {
+                    id: i,
+                    name: "John Doe the " + i,
+                    address: Math.floor(Math.random() * i * 5000) + " Infinite Lane",
+                    city: "Manchester",
+                    state: "Lancaster",
+                    zip: "M" + i + " 2op",
+                    newCustomer: true
+                }
+                custs.push(cust);
+            } return custs;
+        }
+
+    </script>
+</head>
+<body>
+Loading up customers!
+    <br />
+    <br />
+    <button id="loadCustomersButton">Lets load them up!</button>
+    Time (millis): <span id="diff"></span>
+    <div id="container">
+        <table id="customersTable">
+            <tr>
+                <td>ID</td>
+                <th>Name</th>
+                <th>Address</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Zip</th>
+                <th>New Customer?</th>
+            </tr>
+            <tbody></tbody>
+        </table>
+    </div>
+
+</body>
+</html>

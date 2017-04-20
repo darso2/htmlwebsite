@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script>
+        $(function () {
+            $("#showButton").click(function () {
+                var $names = $("#people li");
+                var $output = $("#output");
+                //var $pubs = $names.find('.publisher');
+           //     var $pubs = $("#people li.publisher");
+           //     var $pubs = $names.filter('.publisher');
+
+                    if ($pubs.length) {
+                        var html = "";
+                        $pubs.each(function () {
+                            html += "<li>" + $(this).text() + "</li>";
+                            });
+                        $output.append(html);
+                    }
+
+                else {
+                    $output.append("<li> No pubs found </li>");
+                }
+            })
+        })
+
+    </script>
+</head>
+<body>
+    <button id="showButton">Show pubs</button>
+    <ul id="people">
+        <li class="publisher">Elijah</li>
+        <li class="publisher">Eliza</li>
+        <li>Aaron</li>
+        <li>Fritz</li>
+        <li>leith</li>
+    </ul>
+    <h2>Pubs</h2>
+    <ul id="output"></ul>
+</body>
+</html>

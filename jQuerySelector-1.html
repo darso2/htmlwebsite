@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script>
+        var $emailcontainer;
+
+        $(function () {
+            $emailcontainer = $("#emailContainer");
+            $emailcontainer
+                .attr("title", "Emails")
+                .click(function () {
+                                alert("Clicked Container!");
+                        })
+
+            updatePanels($emailcontainer);
+            updatePanels($("#ordersContainer"));
+
+        })
+
+        function updatePanels($context) {
+           $context.find("div.panel").each(function (i) {
+                $(this).html("Panel " + i);
+            })
+        }
+
+    </script>
+</head>
+<body>
+    <div id="emailContainer">
+        <div class="panel">
+
+        </div>
+        
+        <div class="panel">
+
+        </div>
+    </div>
+    <div id="ordersContainer">
+        <div class="panel">
+
+        </div>
+
+        <div class="panel">
+
+        </div>
+    </div>
+</body>
+</html>
