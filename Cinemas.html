@@ -10,6 +10,12 @@
         margin-top: -21px;
     }
     
+    .whitebg {
+        background: #fff;
+        border: 1px #2f4993 thin;        
+        margin:5px;
+
+    }
 </style>
     <script>
         function AlertedPop() {
@@ -23,9 +29,6 @@
         }
 
         function details() {
-
-            
-
             var eltMovie = document.getElementById("dropdownMovie");            
             var eltDay = document.getElementById("dropdownDay");
             var eltTime = document.getElementById("dropdownTime");
@@ -40,10 +43,44 @@
                 document.getElementById("popButton").setAttribute("data-content", data);
             }
         }
+
+        $(document).ready(function () {
+            $secondbutton = ('#secondbutton');
+            $('#secondButton')
+                .on('click', function () {
+                    var text = $('#textbox1').val();
+                    switch (text) {
+                        case "1":
+                            $(this).attr("data-content", "2");
+                            break;
+                        case "2":
+                            $(this).attr("data-content", "142312");
+                            break;
+                        default:
+                            $(this).attr("data-content", "Please enter 1 or 2");
+                            break;
+                    };
+                })
+                .popover();
+
+            $('#textbox1')
+                .keypress(function (e) {
+                if (e.keyCode == 13) {
+                    e.preventDefault();
+                    alert("Just press the damn submit button");
+                    $('#secondButton').trigger('click');
+                    }
+                })
+
+            $('#popButton').popover()
+        })
+            
     </script>
   <script>
         $(document).ready(function () {
-            $('[data-toggle="popover"]').popover();
+            $('[data-toggle="popover"]').popover({
+                trigger: 'focus'
+            }); 
         });
 </script>      
 </head>
@@ -107,7 +144,8 @@
         <div class="col-sm-6 col-lg-offset-3" style="background: url('./Content/CinBack.jpg') no-repeat">
             <h2><u><i style="color:white">List of cinemas that Tho has picked out of the blue</i></u></h2>
             <div class="row">
-                <div class="col-sm-8" style="background:white;border-radius:5px;margin-left:5px">
+                <div class="col-sm-8">
+                    <div class="col-lg-12" style="background:white;border-radius:5px;margin-left:5px">
                  <form action="javascript:movieInfo">
                   <div class="row">
                    <div class="col-lg-4">
@@ -123,7 +161,7 @@
                     </div>
                    </div>
 
-                  <div class="col-lg-4">
+                   <div class="col-lg-4">
                       <div><p>on</p> </div>
                     <div class="form-group">
                             <select class="form-control" id="dropdownDay">
@@ -136,7 +174,7 @@
                     </div>
                   </div>
 
-                  <div class="col-lg-4">
+                   <div class="col-lg-4">
                       <div><p>at</p> </div>
                     <div class="form-group">
                             <select class="form-control" id="dropdownTime">
@@ -154,15 +192,35 @@
                      </div>
                       </div>
                      </form>
-                </div>                
+                    </div>
+                    
+                    <div class="col-lg-12">
+                    <br />
+                        <div class="tab-content">
+                            <div class="tab-pane fade active">
+                                <form id="cases">
+                                    <div class="form-group">
+                                        Please enter an integer between 1 - 10:
+                                        <div class="input-group">
+                                        <span class="input-group-addon">#</span>
+                                        <input type="text" class="form-control" placeholder="1, 2,..., 10" id="textbox1"/>                                        
+                                        <span class="input-group-btn">
+                                            <button type="button" class="btn btn-default" data-container="body" data-toggle="popover" data-placement="bottom" id="secondButton" data-content="">Submit</button>
+                                        </span>
+                                        </div>
+                                        
+                                    </div>
+                                </form>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
                 <div class="col-sm-3">
                                         <a class="twitter-timeline" style="margin-top:5px" data-lang="en" data-width="220" data-height="400" data-theme="light" href="https://twitter.com/AnnaKendrick47"><script async='async' src="//platform.twitter.com/widgets.js"  charset="utf-8"></script></a>
                 </div>
             </div>
         </div>
-    </div>
-    <div>
-    
     </div>
 
 </body>
