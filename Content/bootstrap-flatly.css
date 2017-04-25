@@ -3693,9 +3693,13 @@ a.btn.disabled, fieldset[disabled] a.btn {
 
     .btn-danger.disabled:hover, .btn-danger[disabled]:hover, fieldset[disabled] .btn-danger:hover, .btn-danger.disabled:focus, .btn-danger[disabled]:focus, fieldset[disabled] .btn-danger:focus, .btn-danger.disabled.focus, .btn-danger[disabled].focus, fieldset[disabled] .btn-danger.focus {
         background-color: #e74c3c;
-        border-color: #e74c3c
+        border-color: #e74c3c;
+        opacity: 0.4;
     }
 
+    .btn-danger.disabled {
+        opacity:0.2;
+    }
     .btn-danger .badge {
         color: #e74c3c;
         background-color: #ffffff
@@ -7545,4 +7549,24 @@ a.list-group-item-danger.active {
     background: -o-linear-gradient(right, #2c3e50, #587a9b); /* For Opera 11.1 to 12.0 */
     background: -moz-linear-gradient(right, #2c3e50, #587a9b); /* For Firefox 3.6 to 15 */
     background: linear-gradient(right, #2c3e50, #587a9b); /* Standard syntax */
+}
+.containerblock > .blueline-seperator {
+    margin-top:-5px;
+    margin-left: -15px;
+}
+
+input[class=radiostyle1] {
+    position:relative;
+    left:36%;
+    display:inline-block
+}
+.radiostyle2 {
+    position: relative;
+    left: 41%;
+    display:inline-block
+}
+.radiostyle3 {
+    position: relative;
+    left: 46%;
+    display:inline-block
 }
