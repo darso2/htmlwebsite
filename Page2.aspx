@@ -23,6 +23,14 @@
     .blockUnderNav {
         margin-top: -21px;
     }
+
+    .containerblock {
+    background-color: aliceblue !important;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+
 </style>
 </head>
 <body>
@@ -175,7 +183,7 @@
                 </div>
            </div>
                <u> <h2 style="color:white"><i>Imaginary cinema deals</i></h2></u> 
-        <div id="blockUnderSeperator" class="container-fluid" style="border-top-left-radius:5px;border-top-right-radius:5px;background-color:aliceblue">
+        <div id="blockUnderSeperator" class="container-fluid containerblock">
                 <div class="row">
 
                     <div class="col-xs-4" id="firstblock" ><br />
