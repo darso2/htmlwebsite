@@ -62,15 +62,18 @@
                 var chosenMovie = eltMovie.options[eltMovie.selectedIndex].text;
                 var chosenDay = eltDay.options[eltDay.selectedIndex].text;
                 var chosenTime = eltTime.options[eltTime.selectedIndex].text;
-                var data = "The movie \"" + chosenMovie + "\" on " + chosenDay + " at " + chosenTime + " really sucks. If you want to watch it that badly, solve the radio button puzzle!";
+                var data = "The movie \"" + chosenMovie + "\" on " + chosenDay + " at " + chosenTime + " really sucks. If you want to watch it that badly, solve the checkbox puzzle below!";
                 document.getElementById("popButton").setAttribute("data-content", data);
                 $('#popButton')
                     .popover()
                     .on('blur', function () {
-                        $(this).popover('hide').data('bs.popover').inState.click = false 
+                        $(this).popover('hide').data('bs.popover').inState.click = false
                     })
-             
-              
+                //creates cookie for when user goes to page1
+                document.cookie = "movie = " + chosenMovie + "; expires=\"\"; path=/";
+                document.cookie = "day = " + chosenDay + "; expires=\"\"; path=/";
+                document.cookie = "time = " + chosenTime + "; expires=\"\"; path=/";
+
             }
         }
         $(document).ready(function () {
@@ -297,7 +300,7 @@
                     </div>  
                     
                     <div class=" containerblock col-lg-8 " id="checkPlayground">
-                        Check all the radio buttons to activate the button!
+                        Check all the boxes to activate the button!
                         <div class="form-group">
                             <div class="form-control" style="height:100px">
                                 <input type="checkbox" class="radiostyle1" id="check1" />
@@ -314,11 +317,11 @@
                         </div>
                     </div>
 
-                    <div class="containerblock col-lg-3" >
+                    <div class="containerblock col-lg-3" style="text-align:center">
                         <u>The button! </u>
-                        <div style="width:50%">
+                        <div >
                             <br />
-                            <input type="button" class="btn btn-group-lg btn-danger disabled" id="theButton" style="position:relative;left:40%" value="Click me!"/>                            
+                            <button class="btn btn-danger disabled" id="theButton" onclick="window.location.replace('Page1.aspx')">Click me!</button>
                         </div>
                         <br />
                     </div>
