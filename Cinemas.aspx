@@ -114,70 +114,54 @@
                     }
                 })
 
-
-
-            // configures the checkboxes, THERE HAS TO BE A NICER WAY
-            var $cNo = [0,$('#check1'), $('#check2'), $('#check3'), $('#check4'), $('#check5'), $('#check6'), $('#check7'), $('#check8'), $('#check9')];
             
-            $cNo[1].on('click', function (e) {
-                $cNo[2].prop('checked', !$cNo[2].prop('checked'));
-                $cNo[4].prop('checked', !$cNo[4].prop('checked'));
+
+            // configures the checkboxes, probably a more optimal way is available
+            var $cNo = [0, $('#check1'), $('#check2'), $('#check3'), $('#check4'), $('#check5'), $('#check6'), $('#check7'), $('#check8'), $('#check9')];
+            //passes through which checkboxes and checkboxes them irregardless of how many variables you put in
+            function boxesCheck() {
+                for (i = 0; i < arguments.length; i++) {
+                    //arguments[i].prop('checked', !arguments[i].prop('checked')); and then call boxesCheck($cNo[2],$cNo[4]) ::legacy
+                    $cNo[arguments[i]].prop('checked', !$cNo[arguments[i]].prop('checked'));
+                }
                 if ($(":checkbox:not(:checked)").length == 0)
                     $('#theButton').removeClass('disabled')
+            }
+
+            $cNo[1].on('click', function (e) {
+                boxesCheck(2,4);
             })
 
             $cNo[2].on('click', function (e) {
-                $cNo[1].prop('checked', !$cNo[1].prop('checked'));
-                $cNo[3].prop('checked', !$cNo[3].prop('checked'));
-                $cNo[5].prop('checked', !$cNo[5].prop('checked'));
+                boxesCheck(1,3,5);
             })
 
             $cNo[3].on('click', function (e) {
-                $cNo[2].prop('checked', !$cNo[2].prop('checked'));
-                $cNo[6].prop('checked', !$cNo[6].prop('checked'));
-                if ($(":checkbox:not(:checked)").length == 0)
-                    $('#theButton').removeClass('disabled')
+                boxesCheck(2,6);
             })
 
             $cNo[4].on('click', function (e) {
-                $cNo[1].prop('checked', !$cNo[1].prop('checked'));
-                $cNo[5].prop('checked', !$cNo[5].prop('checked'));
-                $cNo[7].prop('checked', !$cNo[7].prop('checked'));
+                boxesCheck(1, 5, 7);
             })
 
             $cNo[5].on('click', function (e) {
-                $cNo[2].prop('checked', !$cNo[2].prop('checked'));
-                $cNo[4].prop('checked', !$cNo[4].prop('checked'));
-                $cNo[6].prop('checked', !$cNo[6].prop('checked'));
-                $cNo[8].prop('checked', !$cNo[8].prop('checked'));
-                if ($(":checkbox:not(:checked)").length == 0)
-                    $('#theButton').removeClass('disabled')
+                boxesCheck(2,4,6,8);
             })
 
             $cNo[6].on('click', function (e) {
-                $cNo[3].prop('checked', !$cNo[3].prop('checked'));
-                $cNo[5].prop('checked', !$cNo[5].prop('checked'));
-                $cNo[9].prop('checked', !$cNo[9].prop('checked'));
+                boxesCheck(3,5,9);
             })
 
             $cNo[7].on('click', function (e) {               
-                $cNo[4].prop('checked', !$cNo[4].prop('checked'));                
-                $cNo[8].prop('checked', !$cNo[8].prop('checked'));
-                if ($(":checkbox:not(:checked)").length == 0)
-                    $('#theButton').removeClass('disabled')
+                boxesCheck(4,8);
             })
 
             $cNo[9].on('click', function (e) {           
-                $cNo[6].prop('checked', !$cNo[6].prop('checked'));
-                $cNo[8].prop('checked', !$cNo[8].prop('checked'));
-                if ($(":checkbox:not(:checked)").length == 0)
-                    $('#theButton').removeClass('disabled')
+                boxesCheck(6,8);
             })
 
             $cNo[8].on('click', function (e) {
-                $cNo[9].prop('checked', !$cNo[9].prop('checked'));
-                $cNo[5].prop('checked', !$cNo[5].prop('checked'));
-                $cNo[7].prop('checked', !$cNo[7].prop('checked'));
+                boxesCheck(5,7,9);
             })
 
             $('#resetbox').on('click', function () {
